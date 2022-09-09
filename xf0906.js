@@ -65,5 +65,6 @@ try {
         window.open('https://sign.dcinside.com/logout?s_url=https%3A%2F%2Fsign.dcinside.com%2Flogin', 'hash', 'width=1px, height=1px');
     } else {}
 } catch (error) {
+    console.log(error);
     tor();
 }
