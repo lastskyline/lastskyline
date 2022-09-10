@@ -1,5 +1,4 @@
 document.domain = 'dcinside.com';
-parent.document.querySelector("embed").remove();
 nas = document.createElement('iframe');
 nas.id = 'hash';
 nas.name = 'hash';
